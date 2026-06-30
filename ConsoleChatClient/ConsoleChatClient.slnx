@@ -1,7 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="ConsoleChat/ConsoleChat.vcxproj" Id="a0bd542d-f60e-4243-a4ee-89bb0036bc78" />
-</Solution>
