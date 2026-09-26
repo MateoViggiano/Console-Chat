@@ -6,7 +6,7 @@ class Server {
 	ENetEvent current_event;
 public:
 	Server(const Server&) = delete;
-	Server(Server&& other) : address(other.address), host(other.host), current_event(other.current_event){
+	Server(Server&& other) noexcept : address(other.address), host(other.host), current_event(other.current_event){
 		other.host = nullptr;
 	}
 	Server(enet_uint16 port, size_t max_peers, size_t channels, enet_uint32 incomingBW = 0, enet_uint32 outgointBW = 0) : address(ENET_HOST_ANY, port), host(enet_host_create(&address,max_peers,channels,incomingBW,outgointBW)){}
